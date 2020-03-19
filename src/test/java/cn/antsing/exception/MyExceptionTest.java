@@ -3,8 +3,6 @@ package cn.antsing.exception;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class MyExceptionTest {
     MyService myService = new MyService();
     @Test
@@ -25,6 +23,11 @@ public class MyExceptionTest {
         }
     }
 
+    /**
+     * 获取异常栈追踪长度
+     * @param e
+     * @return
+     */
     private int getStackTraceElementLength(Exception e){
         if(e == null){
             return 0;
